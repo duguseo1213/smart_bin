@@ -1,0 +1,16 @@
+services:
+  dashboard:
+    build:
+      context: ./frontend/dashboard
+    image: ssafy/dashboard
+    container_name: dashboard
+    ports:
+      - "8083:80"
+
+  product_page:
+    build:
+      context: ./frontend/product-page
+    image: ssafy/product_page
+    container_name: product_page
+    ports:
+      - "8082:80"
